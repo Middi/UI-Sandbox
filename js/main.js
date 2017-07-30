@@ -4,18 +4,16 @@ $(document).ready(function () {
   // Mobile Nav
   // ===========================
 
-  $('#hamburger').click(function () {
-    if ($('#menu').hasClass('hidden')) {
-         $('#menu').slideDown( "slow", function() {
-            $('#menu').removeClass('hidden');
-         });
-    }
-    else {
-        $('#menu').slideUp( "slow", function() {
-            $('#menu').addClass('hidden');
-        });
-    }
-  });
+
+
+    $('#open').click(function () {
+        $('#menu').removeClass('hide');
+    });
+    
+    $('#close').click(function () {
+        $('#menu').addClass('hide');
+    });
+
 
           
   // ===========================

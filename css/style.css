@@ -55,4 +55,41 @@ a:focus, button:focus {
   font-family: 'helvetica neue', sans-serif;
   font-weight: 400; }
 
+h2 {
+  color: #dedee8;
+  font-size: 1.6rem; }
+
+i {
+  color: #dedee8; }
+
+#open {
+  position: fixed;
+  padding: 10px;
+  font-size: 2rem;
+  color: #101020;
+  cursor: pointer; }
+  #open:hover {
+    opacity: 0.7; }
+
+#menu {
+  height: 100vh;
+  width: 300px;
+  padding: 8px 20px;
+  background-color: #101020;
+  position: fixed;
+  overflow: hidden;
+  transition: all ease-in-out 0.9; }
+
+#close {
+  opacity: 0.7;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+  #close:hover {
+    opacity: 1; }
+
+.hide {
+  margin-left: -300px; }
+
 /*----------  Break Point 1 - 1200px  ----------*/
