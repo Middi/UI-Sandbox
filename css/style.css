@@ -84,8 +84,8 @@ strong {
 
 .menu {
   height: 100vh;
-  width: 300px;
-  margin-left: -300px;
+  width: 250px;
+  margin-left: -250px;
   background-color: #243138;
   position: fixed;
   overflow: hidden;
@@ -112,7 +112,7 @@ ul {
   margin: 30px 0; }
 
 li {
-  padding: 6px 18px 18px;
+  padding: 4px 18px 16px;
   border-bottom: 1px solid #374953;
   cursor: pointer; }
   li i {
