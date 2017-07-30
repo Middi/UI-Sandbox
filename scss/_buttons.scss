@@ -9,13 +9,16 @@
 
 .btn {
     border: none;
-    background: none;
-	margin: 6px;
+	background: none;
+	margin: 0 .25em 0 0;
+	line-height: 1em;
 	color: $black;
-    font-size: 1rem;
-	border-radius: 6px;
-	padding: 0.6em 1em;
+	font-size: 1rem;
+	font-weight: 700;
+	border-radius: .28571429rem;
+	padding: .78571429em 1.5em .78571429em;
 	transition: all 0.2s ease;
+	
 	
 	&:active {
 		transform: scale(0.98);
@@ -25,8 +28,7 @@
 
 .btn-outline {
 	color: $brand;
-	border: 2px solid $black;
-	padding: 0.52em 1.1em;
+	border: 2px solid $brand;
 	
 	&:hover {
 	background-color: $brand;
