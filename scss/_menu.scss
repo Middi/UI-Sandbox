@@ -55,5 +55,6 @@ li {
 
 .active {
     background-color: $menu-select;
+    border-left: 5px solid $brand;
     i {color: $white}
 }

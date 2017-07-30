@@ -67,6 +67,9 @@ a {
   color: #f2f2f2;
   font-weight: 600; }
 
+span {
+  color: #67bf95; }
+
 i {
   color: #f2f2f2; }
 
@@ -126,7 +129,8 @@ li {
       color: #f2f2f2; }
 
 .active {
-  background-color: #374953; }
+  background-color: #374953;
+  border-left: 5px solid #67bf95; }
   .active i {
     color: #f2f2f2; }
 
