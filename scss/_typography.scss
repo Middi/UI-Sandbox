@@ -9,9 +9,21 @@
     font-weight: 400;
 }
 
+h1 {
+    font-size: 2.8rem;
+}
+
 h2 {
+    font-weight: 200;
     color: $white;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+}
+
+a {
+    color: $white;
+    font-weight: 600;
 }
 
 i {color: $white}
+
+strong {font-weight: 600}

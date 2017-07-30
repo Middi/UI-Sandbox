@@ -7,11 +7,13 @@ $(document).ready(function () {
 
 
     $('#open').click(function () {
-        $('#menu').removeClass('hide');
+        $(this).css('opacity', '0');
+        $('.menu').addClass('show');
     });
     
     $('#close').click(function () {
-        $('#menu').addClass('hide');
+        $('.menu').removeClass('show');
+        $('#open').css('opacity', '0.7');
     });
 
 

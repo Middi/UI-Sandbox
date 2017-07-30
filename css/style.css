@@ -55,33 +55,46 @@ a:focus, button:focus {
   font-family: 'helvetica neue', sans-serif;
   font-weight: 400; }
 
+h1 {
+  font-size: 2.8rem; }
+
 h2 {
-  color: #dedee8;
-  font-size: 1.6rem; }
+  font-weight: 200;
+  color: #f2f2f2;
+  font-size: 1.4rem; }
+
+a {
+  color: #f2f2f2;
+  font-weight: 600; }
 
 i {
-  color: #dedee8; }
+  color: #f2f2f2; }
+
+strong {
+  font-weight: 600; }
 
 #open {
   position: fixed;
   padding: 10px;
   font-size: 2rem;
-  color: #101020;
+  color: black;
   cursor: pointer; }
   #open:hover {
-    opacity: 0.7; }
+    opacity: 0.6; }
 
-#menu {
+.menu {
   height: 100vh;
   width: 300px;
-  padding: 8px 20px;
-  background-color: #101020;
+  margin-left: -300px;
+  background-color: #243138;
   position: fixed;
   overflow: hidden;
-  transition: all ease-in-out 0.9; }
+  transition: .4s ease-in-out; }
+  .menu h2 {
+    padding: 10px; }
 
 #close {
-  opacity: 0.7;
+  opacity: 0.8;
   cursor: pointer;
   position: absolute;
   top: 10px;
@@ -89,7 +102,99 @@ i {
   #close:hover {
     opacity: 1; }
 
-.hide {
-  margin-left: -300px; }
+.show {
+  margin-left: 0px; }
+
+ul {
+  border-top: 1px solid #374953;
+  list-style-type: none;
+  margin: 30px 0; }
+
+li {
+  padding: 14px 18px;
+  border-bottom: 1px solid #374953;
+  cursor: pointer; }
+  li i {
+    position: relative;
+    top: 6px;
+    right: 2px;
+    color: #626d82; }
+  li:hover {
+    background-color: #374953; }
+    li:hover i {
+      color: #f2f2f2; }
+
+.active {
+  background-color: #374953; }
+  .active i {
+    color: #f2f2f2; }
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #e9e9e9; }
+
+article {
+  width: 760px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -380px;
+  padding: 30px;
+  background-color: #f2f2f2;
+  border: 2px solid #d5d5d5;
+  border-radius: 6px; }
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px; }
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none; }
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+input:checked + .slider {
+  background-color: #3bb16b; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #3bb16b; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px); }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px; }
+
+.slider.round:before {
+  border-radius: 50%; }
 
 /*----------  Break Point 1 - 1200px  ----------*/
