@@ -52,7 +52,7 @@ a:focus, button:focus {
 =                  Typography                 =
 =============================================*/
 *, h1, h2, h3, h4, h5, h6, p, a, small {
-  font-family: 'helvetica neue', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400; }
 
 h1 {
@@ -81,6 +81,7 @@ strong {
   padding: 10px;
   font-size: 2rem;
   color: black;
+  z-index: 10;
   cursor: pointer; }
   #open:hover {
     opacity: 0.6; }
@@ -257,11 +258,32 @@ input:checked + .slider:before {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg); }
 
+header {
+  height: 600px;
+  position: relative;
+  background-image: url("../images/hero-image.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden; }
+  header h1 {
+    text-align: center;
+    width: 400px;
+    height: 136px;
+    padding: 40px 0;
+    color: #f2f2f2;
+    border: 4px solid #f2f2f2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -68px; }
+
 main {
-  height: 100vh;
   width: 100vw;
-  background-color: #e9e9e9;
-  padding: 30px 30px; }
+  height: 100%;
+  background-color: #e9e9e9; }
 
 article {
   max-width: 760px;
