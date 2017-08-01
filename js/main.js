@@ -32,10 +32,10 @@ $(document).ready(function () {
                     scrollTop: target.offset().top
                 }, 1000);
 
-                $('#menu').slideUp( "slow", function() {
-                $('#menu').addClass('hidden');
-                
-                });
+                // Close Menu
+                $('.menu').removeClass('show');
+                $('#open').css('opacity', '0.7');
+
                 return false;
             }
         }
