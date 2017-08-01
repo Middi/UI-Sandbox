@@ -155,7 +155,6 @@ li {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
   transition: .4s; }
 
 .slider:before {
@@ -166,7 +165,6 @@ li {
   left: 3px;
   bottom: 3px;
   background-color: white;
-  -webkit-transition: .4s;
   transition: .4s; }
 
 input:checked + .slider {
@@ -174,7 +172,6 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   -webkit-transform: translateX(17px);
-  -ms-transform: translateX(17px);
   transform: translateX(17px); }
 
 /* Rounded sliders */
@@ -196,7 +193,8 @@ input:checked + .slider:before {
   padding: .78571429em 1.5em .78571429em;
   transition: all 0.2s ease; }
   .btn:active {
-    transform: scale(0.98); }
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98); }
 
 .btn-outline {
   color: #67bf95;
@@ -221,15 +219,52 @@ input:checked + .slider:before {
   .bg-alt:hover {
     background-color: black; }
 
+.card-container {
+  -webkit-perspective: 700px;
+          perspective: 700px; }
+
+.card {
+  color: #0b0b0b;
+  margin: 20px 0;
+  width: 200px;
+  height: 250px;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  line-height: 250px;
+  transition: all 0.6s ease;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+
+.card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
+.front, .back {
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  border-radius: 4px;
+  border: 1px solid #d5d5d5;
+  background-color: white;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
 main {
   height: 100vh;
   width: 100vw;
   background-color: #e9e9e9;
-  padding: 60px 30px; }
+  padding: 30px 30px; }
 
 article {
   max-width: 760px;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 30px;
   background-color: #f2f2f2;
   border: 1px solid #d5d5d5;

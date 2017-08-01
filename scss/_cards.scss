@@ -1,0 +1,30 @@
+.card-container {perspective: 700px}
+
+.card {
+    color:  $black;
+    margin: 20px 0;
+    width:   200px;
+    height:  250px;
+    position: relative;
+    cursor:    pointer;
+    text-align: center;
+    line-height: 250px;
+    transition:    all 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.card:hover {transform: rotateY(180deg)}
+
+.front, .back {
+    top:        0;
+    left:       0;
+    width:  200px;
+    height: 250px;
+    position: absolute;
+    border-radius: 4px;
+    border:   1px solid $border;
+    background-color:   white;
+    backface-visibility: hidden;
+}
+
+.back {transform: rotateY(180deg)}
