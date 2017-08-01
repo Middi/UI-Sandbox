@@ -1,10 +1,9 @@
 $(document).ready(function () {
         
-  // ===========================
-  // Mobile Nav
-  // ===========================
 
-
+    // ===========================
+    // Mobile Nav
+    // ===========================
 
     $('#open').click(function () {
         $(this).css('opacity', '0');
@@ -16,11 +15,10 @@ $(document).ready(function () {
         $('#open').css('opacity', '0.7');
     });
 
-
           
-  // ===========================
-  // Smooth Scrolling
-  // ===========================
+    // ===========================
+    // Smooth Scrolling
+    // ===========================
 
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
