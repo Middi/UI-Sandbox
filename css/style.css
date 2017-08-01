@@ -246,11 +246,12 @@ input:checked + .slider:before {
   width: 200px;
   height: 250px;
   position: absolute;
-  border-radius: 4px;
+  border-radius: 2px;
   border: 1px solid #d5d5d5;
   background-color: white;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden; }
+          backface-visibility: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.17); }
 
 .back {
   -webkit-transform: rotateY(180deg);
