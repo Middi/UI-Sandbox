@@ -62,5 +62,27 @@ $(document).ready(function () {
         $('.card').addClass('flip');
     });
 
+    $('.return').click(function () {
+        $('.card').removeClass('flip');
+    });
+
+
+    // ===========================
+    // Modal
+    // ===========================
+
+    $('#modal').click(function () {
+        $('.modal').removeClass('hide');
+    });
+
+    $('#close-modal').click(function () {
+        $('.modal').addClass('hide');
+    });
+    
+    $('.modal-bg').click(function () {
+        $('.modal').addClass('hide');
+    });
+
+
 });
 

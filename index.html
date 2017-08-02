@@ -28,7 +28,7 @@
 
                     <a href="#cards"><li><i class="fa fa-id-card-o fa-lg" aria-hidden="true"></i> Cards</li></a>
 
-                    <a href="#toggles"><li><i class="fa fa-bar-chart fa-lg" aria-hidden="true"></i> Graphs</li></a>
+                    <a href="#modals"><li><i class="fa fa-window-maximize fa-lg" aria-hidden="true"></i>Modals</li></a>
                 </ul>
                 
             </div>
@@ -54,17 +54,35 @@
                     <div class="card-container">
                         <div class="card">
                             <div class="front">
-                                <h3>What's 2+ 2?</h3>
+                                <h3>What's 2 + 2?</h3>
                                 <button class="btn btn-outline spin" type="button">Answer</button>
                             </div>
                             <div class="back">
                                 <h1>4</h1>
+                                <p class="return">back</p>
                             </div>
                         </div>
                     </div>
                 </article>
 
+                 <article id="modals">
+                    <h1>Modals</h1>
+                    <hr>
+                    <button id="modal" class="btn btn-round bg-brand" type="button">Click for Modal</button>
+                </article>
+
+
             </main>
+
+            <!-- MODAL -->
+            <div class="modal hide">
+                <div class="modal-bg"></div>
+                <div class="modal-main">
+
+                <i id="close-modal" class="material-icons close-button">close</i>
+                        <h1>Here is a modal</h1>
+                </div>
+            </div>
 
 
         <!--===========================

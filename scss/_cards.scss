@@ -28,8 +28,12 @@
     background-color:   white;
     backface-visibility: hidden;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.17);
-    h3 {
-        padding: 10px;
+    h3 {padding: 10px}
+    p {
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
     }
 }
 
