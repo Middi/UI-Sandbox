@@ -8,15 +8,17 @@
     position: relative;
     cursor:    pointer;
     text-align: center;
-    line-height: 250px;
+    line-height:  50px;
     transition:    all 0.6s ease;
     transform-style: preserve-3d;
+    
 }
 
-.card:hover {transform: rotateY(180deg)}
+.flip {transform: rotateY(180deg)}
 
 .front, .back {
     top:        0;
+    padding-top: 75px;
     left:       0;
     width:  200px;
     height: 250px;
@@ -26,6 +28,9 @@
     background-color:   white;
     backface-visibility: hidden;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.17);
+    h3 {
+        padding: 10px;
+    }
 }
 
 .back {transform: rotateY(180deg)}

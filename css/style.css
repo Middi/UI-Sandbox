@@ -89,21 +89,21 @@ strong {
 .menu {
   height: 100vh;
   width: 250px;
+  z-index: 10;
   margin-left: -250px;
-  background-color: #243138;
   position: fixed;
   overflow: hidden;
-  transition: .4s ease-in-out;
-  z-index: 10; }
+  background-color: #243138;
+  transition: 0.4s ease-in-out; }
   .menu h2 {
     padding: 10px; }
 
 #close {
   opacity: 0.8;
-  cursor: pointer;
-  position: absolute;
   top: 10px;
-  right: 10px; }
+  right: 10px;
+  cursor: pointer;
+  position: absolute; }
   #close:hover {
     opacity: 1; }
 
@@ -232,17 +232,18 @@ input:checked + .slider:before {
   position: relative;
   cursor: pointer;
   text-align: center;
-  line-height: 250px;
+  line-height: 50px;
   transition: all 0.6s ease;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d; }
 
-.card:hover {
+.flip {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg); }
 
 .front, .back {
   top: 0;
+  padding-top: 75px;
   left: 0;
   width: 200px;
   height: 250px;
@@ -253,6 +254,8 @@ input:checked + .slider:before {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.17); }
+  .front h3, .back h3 {
+    padding: 10px; }
 
 .back {
   -webkit-transform: rotateY(180deg);

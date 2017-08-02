@@ -52,4 +52,15 @@ $(document).ready(function () {
         });
         
     });
+
+
+    // ===========================
+    // Card Flip
+    // ===========================
+
+    $('.spin').click(function () {
+        $('.card').addClass('flip');
+    });
+
 });
+
