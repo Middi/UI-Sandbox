@@ -295,7 +295,8 @@ header {
 
 .modal {
   position: fixed;
-  z-index: 100; }
+  z-index: 100;
+  display: none; }
 
 .modal-bg {
   position: inherit;
