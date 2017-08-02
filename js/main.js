@@ -72,15 +72,15 @@ $(document).ready(function () {
     // ===========================
 
     $('#modal').click(function () {
-        $('.modal').removeClass('hide');
+        $('.modal').show();
     });
 
     $('#close-modal').click(function () {
-        $('.modal').addClass('hide');
+        $('.modal').hide();
     });
     
     $('.modal-bg').click(function () {
-        $('.modal').addClass('hide');
+        $('.modal').hide();
     });
 
 
