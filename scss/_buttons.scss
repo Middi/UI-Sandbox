@@ -15,8 +15,9 @@
 	font-size: 	1rem;
 	font-weight: 500;
 	margin:   0 .25em 0 0;
-	border-radius: .28rem;
-	padding: .78em 1.5em .78em;
+	border: 2px solid $brand;
+	border-radius: 	  .28rem;
+	padding: .6em 1.5em .6em;
 	transition:  all 0.2s ease;
 	
 	&:active {transform: scale(0.98)}
@@ -45,11 +46,14 @@
 .bg-brand {
     background-color: $brand;
 
-    &:hover {background-color: darken($brand, 5)}
+    &:hover {
+		background-color: darken($brand, 10);
+		border: 2px solid  darken($brand, 10);
+	}
 }
 
 .bg-alt {
     background-color: $black;
 
-    &:hover {background-color: darken($black, 5)}
+    &:hover {background-color: darken($black, 10)}
 }

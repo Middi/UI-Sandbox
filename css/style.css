@@ -193,8 +193,9 @@ input:checked + .slider:before {
   font-size: 1rem;
   font-weight: 500;
   margin: 0 .25em 0 0;
+  border: 2px solid #67bf95;
   border-radius: .28rem;
-  padding: .78em 1.5em .78em;
+  padding: .6em 1.5em .6em;
   transition: all 0.2s ease; }
   .btn:active {
     -webkit-transform: scale(0.98);
@@ -216,7 +217,8 @@ input:checked + .slider:before {
 .bg-brand {
   background-color: #67bf95; }
   .bg-brand:hover {
-    background-color: #55b788; }
+    background-color: #48ab7c;
+    border: 2px solid #48ab7c; }
 
 .bg-alt {
   background-color: #0b0b0b; }
