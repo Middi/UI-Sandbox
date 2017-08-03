@@ -1,0 +1,12 @@
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 100%;
+    margin: 30px 10px;
+    transition: all .5s ease-in-out;
+}
+
+.move {
+    transform: translate(400px, 0px)
+}

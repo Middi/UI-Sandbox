@@ -84,5 +84,14 @@ $(document).ready(function () {
     });
 
 
+    // ===========================
+    // Move
+    // ===========================
+
+    $('#move-button').click(function () {
+        $('.circle').toggleClass('move');
+    });
+
+
 });
 
